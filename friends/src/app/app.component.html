@@ -17,7 +17,7 @@
     <button (click)="getPokemon()">Pokemon</button>
     <div *ngIf="pokemon">
         <ul>
-            <li *ngFor="let o of pokemon">{{ o.id }}: {{ o.customer }} ({{ o.revenue | number }})</li>
+            <li *ngFor="let p of pokemon">{{p}}</li>
         </ul>
     </div>
 

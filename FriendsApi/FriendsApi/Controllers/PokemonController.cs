@@ -14,6 +14,7 @@ namespace FriendsApi.Controllers
     public class PokemonController : ControllerBase
     {
         [HttpGet]
+
         public IActionResult GetAllOrders()
         {
             return Ok(new[] { "Shiggy", "Schillok", "Turtok" });

@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
   loggedIn = false;
   profile?: MicrosoftGraph.User;
   users?: MicrosoftGraph.User[];
-  pokemon?: IOrder[];
+  pokemon?: string[];
   userNameFilter: string = "";
   
 
@@ -72,7 +72,7 @@ export class AppComponent implements OnInit {
 
   getPokemon() {
     this.client
-      .get<IOrder[]>("http://localhost:5000/api/Pokemon")
+      .get<any>("http://localhost:5000/api/Pokemon")
       .subscribe((pokemon) => (this.pokemon = pokemon));
   }
 

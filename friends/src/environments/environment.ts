@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   aadClientId : '667e1b42-03a4-4f67-ab73-fe269fbd6116',
   aadTenantId : '91fc072c-edef-4f97-bdc5-cfb67718ae3a',
-  customApi : 'http/localhost:5001/api/Pokemon' ,
+  customApi : 'http://localhost:5000/api/Pokemon' ,
 };
 
 /*
